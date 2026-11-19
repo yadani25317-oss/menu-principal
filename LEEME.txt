@@ -1,0 +1,18 @@
+Adaptado para Unity 2022.2.23f1 (TextMeshPro 3.0.6, uGUI 1.0.0).
+
+OPCIÓN A - Abrir como proyecto nuevo:
+1. Descomprime el zip y, en Unity Hub, "Add project from disk" apuntando a la carpeta.
+   Ábrelo con el editor 2022.2.23f1 (Unity importará los paquetes de Packages/manifest.json).
+
+OPCIÓN B - Usar en un proyecto existente:
+1. Copia SOLO la carpeta "Assets" dentro de la carpeta Assets de tu proyecto (combinar).
+2. Verifica en Window > Package Manager que TextMeshPro (3.0.6) y Unity UI estén instalados.
+
+Después (en ambos casos):
+3. Si Unity lo pide: Window > TextMeshPro > Import TMP Essential Resources.
+4. Menu superior: Tools > Crear Menú UI
+5. Se crean Assets/Scenes/MainMenu y GameScene (ya en Build Settings). Abre MainMenu y pulsa Play.
+Opcional: arrastra un AudioClip al AudioSource del objeto MusicPlayer.
+
+Nota: el EventSystem usa InputSystemUIInputModule si el paquete Input System está instalado;
+si no, usa StandaloneInputModule (Input Manager clásico, el predeterminado en 2022.2).
